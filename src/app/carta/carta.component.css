@@ -1,0 +1,301 @@
+/* Seccion 1 */
+.seccion-1{
+  width: 100vw;
+  height: 100vh;
+  background-color: #9ed1ee;
+}
+
+.formulario-wrapper{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  box-shadow: 0 3rem 7rem rgba(0,0,0,.5);
+  border-radius: 3rem;
+  position: relative;
+}
+
+.formulario-derecha{
+  width: 60%;
+  background: linear-gradient(rgba(15,15,15,.6),rgba(22,22,22,.9)),
+  url(/assets/imagenes/bg-seccion-1.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 0 3rem 3rem 0;
+}
+
+.formulario-izquierda{
+  width: 40%;
+  background-color: #eee;
+  padding: 0 16rem;
+  border-radius: 3rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-titulo{
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #272727;
+  margin-bottom: 2rem;
+  text-align: left;
+  line-height: 3rem;
+}
+
+.formulario-izquierda form{
+  width: 100%;
+}
+
+.formulario-izquierda label{
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+
+.input-grupo{
+  text-align: left;
+}
+
+.grupo-recordar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grupo-recordar a{
+  color: #dda948;
+}
+
+.campo{
+  width: 100%;
+  margin: 1rem 0;
+  padding: .5rem;
+  font-size: 1.4rem;
+  color: #4b4b4b;
+  outline: none;
+}
+
+.campo:focus{
+  border: .2rem solid #dda948;
+}
+
+.contenido-derecha{
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.contenido-derecha h1{
+  font-size: 7rem;
+  font-weight: 700;
+  color: #fff;
+  transform: translateX(10%);
+  margin-top: 10rem;
+}
+
+.contenido-derecha h3{
+  font-size: 3rem;
+  font-weight: 200;
+  transform: translateX(110%);
+  width: 40%;
+  line-height: 5rem;
+  margin-top: 5rem;
+}
+
+.contenido-derecha p{
+  font-size: 1.2rem;
+  width: 25%;
+  line-height: 3rem;
+  transform: translateX(177%);
+  margin-top: 5rem;
+}
+
+/* Navbar */
+.navbar{
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+}
+
+.navbar-link{
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 1rem;
+  letter-spacing: .1rem;
+  position: relative;
+}
+
+.navbar-link:nth-child(1)::before{
+  content: '';
+  width: 70%;
+  height: .2rem;
+  background-color: #dda948;
+  position: absolute;
+  bottom: -.9rem;
+  right: 13%;
+}
+/* Navbar final */
+/* Seccion 1 final */
+
+/* Responsividad */
+@media (max-width:1650px) {
+  .formulario-izquierda{
+    padding: 0 10rem;
+  }
+
+  .contenido-derecha h1{
+    font-size: 5rem;
+    font-weight: 400;
+    width: 80%;
+  }
+
+  .contenido-derecha h3{
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .contenido-derecha p{
+    line-height: 2rem;
+  }
+}
+
+@media (max-width:1200px) {
+  .formulario-izquierda{
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width:1050px) {
+  .formulario-izquierda{
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width:950px) {
+  .formulario-izquierda{
+    width: 50%;
+  }
+
+  .formulario-derecha{
+    width: 50%;
+  }
+}
+
+@media (max-width:860px) {
+  .contenido-derecha h1{
+    font-size: 3.5rem;
+  }
+
+  .contenido-derecha h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    transform: translateX(75%);
+  }
+
+  .contenido-derecha p{
+    font-size: 1.2rem;
+    width: 60%;
+    transform: translateX(50%);
+  }
+
+  .navbar{
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+
+  .navbar-link{
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width:680px) {
+  .formulario-derecha,
+  .contenido-derecha{
+    display: none;
+  }
+
+  .formulario-izquierda{
+    width: 100%;
+    border-radius: 3rem;
+    padding: 0 12rem;
+  }
+
+  .navbar-link{
+    color: #272727;
+  }
+
+  .grupo-recordar {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width:560px) {
+  .formulario-izquierda{
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width:320px) {
+  .contenido-derecha{
+    width: 0;
+    visibility: hidden;
+  }
+
+  .formulario-wrapper{
+    width: 95%;
+    height: 95%;
+  }
+
+  .formulario-izquierda{
+    padding: 0 4rem;
+  }
+
+  .grupo-recordar{
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .navbar-link{
+    font-size: 1rem;
+    top: .5rem;
+    right: 2rem;
+  }
+
+  .form-titulo{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .formulario-izquierda{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width:375px) {
+  .formulario-wrapper{
+    width: 95%;
+    height: 95%;
+  }
+
+  .form-titulo{
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width:425px) {
+  .formulario-wrapper{
+    width: 95%;
+    height: 95%;
+  }
+
+  .grupo-recordar{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+}
+/* Responsividad final */

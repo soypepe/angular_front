@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:1200px) {
+  html{
+    font-size: 58%;
+  }
+}
+
+@media (max-width:680px) {
+  html{
+    font-size: 62.5%;
+  }
+}
