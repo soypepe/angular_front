@@ -1,3 +1,5 @@
-# Evaluacion Angular
+# Audible Amazon Login
 
-Evaluacion que toma en cuenta el diseño y la responsividad
+Clon de pantalla de entrada a audible
+
+![alt text](https://raw.githubusercontent.com/soypepe/angular_front/master/audible.JPG)
